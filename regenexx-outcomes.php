@@ -4,7 +4,7 @@
  * Description:       Regenexx Outcome Data for Provider Sites
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.8
+ * Version:           0.1.9
  * Author:            Klein New Media
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@
  */
 
 
-define('ROP_VERSION', '0.1.8');
+define('ROP_VERSION', '0.1.9');
 
 include_once 'partials/setup.php';
 
@@ -70,13 +70,13 @@ add_action( 'admin_notices', 'sample_admin_notice__error' );
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_boilerplate_block_init() {
+function create_block_regenexx_outcomes_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_boilerplate_block_init' );
+add_action( 'init', 'create_block_regenexx_outcomes_block_init' );
 
 
-function blockgallery_frontend_scripts() {
+function regenexx_outcomes_frontend_scripts() {
 	if ( has_block( 'create-block/boilerplate' ) ) {
   $version = date("d.m.y");
 
@@ -89,7 +89,7 @@ function blockgallery_frontend_scripts() {
 		);
 	}
 }
-add_action( 'wp_enqueue_scripts', 'blockgallery_frontend_scripts' );
+add_action( 'wp_enqueue_scripts', 'regenexx_outcomes_frontend_scripts' );
 
 }
 
