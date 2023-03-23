@@ -18,10 +18,12 @@ node_modules/
 .npm
 .vs/
 .vscode/
+src/
 *stylelintrc.json
 .editorconfig
 .eslintrc
 boilerplate.code-workspace
+package-lock.json
 
 
 # Optional eslint cache
