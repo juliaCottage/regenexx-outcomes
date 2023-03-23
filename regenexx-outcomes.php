@@ -4,7 +4,7 @@
  * Description:       Regenexx Outcome Data for Provider Sites
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.4
+ * Version:           0.1.5
  * Author:            Klein New Media
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@
  */
 
 
-define('ROP_VERSION', '0.1.4');
+define('ROP_VERSION', '0.1.5');
 
 include_once 'partials/setup.php';
 
