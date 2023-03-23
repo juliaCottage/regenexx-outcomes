@@ -16,6 +16,13 @@ node_modules/
 
 # Optional npm cache directory
 .npm
+.vs/
+.vscode/
+*stylelintrc.json
+.editorconfig
+.eslintrc
+boilerplate.code-workspace
+
 
 # Optional eslint cache
 .eslintcache
