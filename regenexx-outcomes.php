@@ -4,7 +4,7 @@
  * Description:       Regenexx Outcome Data for Regenexx Provider Sites. Use shortcode [regenexx_outcomes].
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.2.0
+ * Version:           0.2.1
  * Author:            Klein New Media
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@
  */
 
 
-define('ROP_VERSION', '0.2.0');
+define('ROP_VERSION', '0.2.1');
 
 include_once 'partials/setup.php';
 
@@ -24,7 +24,7 @@ add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'targetdna_license_
 
 function targetdna_license_settings_link( $links ) {
   $links[] = '<a href="' .
-  admin_url( 'options-general.php?page=regenexx-outcomes%2Fpartials%2Fsetup.php' ) .
+  admin_url( 'options-general.php?page=knm-license%2Fpartials%2Fsetup.php' ) .
   '">' . __('License Key') . '</a>';
   return $links;
 }
@@ -51,45 +51,6 @@ add_action( 'admin_notices', 'sample_admin_notice__error' );
       include_once $my_theme_filename;
     }
   }
-
-
-
-
-
-//  function regenexx_outcomes_register_block() {
-//       register_block_type_from_metadata( __DIR__ );
-
-//   }
-//   add_action( 'init', 'regenexx_outcomes_register_block' );
-
-
- /**
- * Registers the block using the metadata loaded from the `block.json` file.
- * Behind the scenes, it registers also all assets so they can be enqueued
- * through the block editor in the corresponding context.
- *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
- */
-// function create_block_regenexx_outcomes_block_init() {
-// 	register_block_type( __DIR__ . '/build' );
-// }
-// add_action( 'init', 'create_block_regenexx_outcomes_block_init' );
-
-
-// function regenexx_outcomes_frontend_scripts() {
-// 	if ( has_block( 'create-block/boilerplate' ) ) {
-//   $version = date("d.m.y");
-
-// 		wp_enqueue_script(
-// 			'regenexx-outcomes',
-//       'https://targetdna.com/wp-content/targetdna-assets/outcomes/js/targetdna-outcomes-dist.js?layout=app',
-// 			array( 'jquery' ),
-// 			$version,
-//       true
-// 		);
-// 	}
-// }
-// add_action( 'wp_enqueue_scripts', 'regenexx_outcomes_frontend_scripts' );
 
 }
 

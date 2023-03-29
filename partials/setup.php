@@ -16,12 +16,12 @@ define('YOUR_ITEM_REFERENCE', 'Regenexx Outcomes Plugin'); //Rename this constan
 add_action('admin_menu', 'targetdna_license_menu');
 
 function targetdna_license_menu() {
-    add_options_page('License Activation Menu', 'KNM License', 'manage_options', __FILE__, 'targetdna_license_management_page');
+    add_options_page('License Activation Menu', 'KNM License', 'manage_options', 'knm-license', 'targetdna_license_management_page');
 }
 
 function targetdna_license_management_page() {
     echo '<div class="wrap">';
-    echo '<h2>Regenexx Outcomes Plugin License Key</h2>';
+    echo '<h2>Klein New Media Plugin License Key</h2>';
 
     /*** License activate button was clicked ***/
     if (isset($_REQUEST['activate_license'])) {
