@@ -11,7 +11,7 @@ define('YOUR_SPECIAL_SECRET_KEY', '5bad15a5b97394.35702508'); //Rename this cons
 define('YOUR_LICENSE_SERVER_URL', 'https://license.targetdna.com/'); //Rename this constant name so it is specific to your plugin or theme.
 
 // This is a value that will be recorded in the license manager data so you can identify licenses for this item/product.
-define('YOUR_ITEM_REFERENCE', 'Regenexx Outcomes Plugin'); //Rename this constant name so it is specific to your plugin or theme.
+define('YOUR_ITEM_REFERENCE', 'Klein New Media License'); //Rename this constant name so it is specific to your plugin or theme.
 
 add_action('admin_menu', 'targetdna_license_menu');
 
