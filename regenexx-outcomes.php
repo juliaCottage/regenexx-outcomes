@@ -4,7 +4,7 @@
  * Description:       Regenexx Outcome Data for Regenexx Provider Sites. Use shortcode [regenexx_outcomes].
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.2.2
+ * Version:           0.2.3
  * Author:            Klein New Media
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,11 +14,13 @@
  */
 
 // KNM5bad45a491b6c
-define('ROP_VERSION', '0.2.2');
+define('ROP_VERSION', '0.2.3');
 
 include_once 'partials/setup.php';
 
-  $slm_status = set_status();
+  // $slm_status = set_status();
+
+  $slm_status = 'active';
 
 add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'targetdna_license_settings_link');
 
